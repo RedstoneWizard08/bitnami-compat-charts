@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "bitnami-shell.fullname" . }}-test-connection"
+  labels:
+    {{- include "bitnami-shell.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "bitnami-shell.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
