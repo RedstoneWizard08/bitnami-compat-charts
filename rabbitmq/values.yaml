@@ -1,9 +1,9 @@
 replicaCount: 1
 image:
-  repository: nginx
+  registry: ghcr.io
+  repository: zcube/bitnami-compat/rabbitmq
+  tag: 3.9
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
@@ -27,7 +27,7 @@ securityContext: {}
   # runAsUser: 1000
 service:
   type: ClusterIP
-  port: 80
+  port: 5672
 ingress:
   enabled: false
   className: ""

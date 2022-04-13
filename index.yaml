@@ -3,7 +3,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-11T17:18:10.234664244Z"
+    created: "2022-04-13T04:11:15.094469259Z"
     description: A Helm chart for Kubernetes
     digest: 35f754c4ab323bc0df6895d1ff8c36ebf4ce9715aff395fc33488a2164b75741
     name: mysql
@@ -11,4 +11,15 @@ entries:
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
-generated: "2022-04-11T17:18:10.230033105Z"
+  rabbitmq:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-04-13T04:11:15.094816939Z"
+    description: A Helm chart for Kubernetes
+    digest: 3e62efbd52780819c1278428fa5390aaf63289fac572a364fa590460f697813e
+    name: rabbitmq
+    type: application
+    urls:
+    - rabbitmq-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-04-13T04:11:15.093966179Z"
